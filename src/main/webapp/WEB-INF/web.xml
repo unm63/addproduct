@@ -1,0 +1,31 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Add Product</display-name>
+  <servlet>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<display-name>ProductServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ujwal.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Success</servlet-name>
+  	<display-name>Success</display-name>
+  	<description></description>
+  	<servlet-class>com.ujwal.servlet.Success</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Success</servlet-name>
+  	<url-pattern>/Success</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>ProductServlet</servlet-name>
+  <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+</web-app>
